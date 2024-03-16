@@ -1,0 +1,21 @@
+{
+  "folders": [
+    {
+      "name": "portfolio",
+      "path": "."
+    },
+    {
+      "path": "../html-css"
+    },
+    {
+      "path": "../javascript-course-master/complete-javascript-course-master"
+    },
+    {
+      "path": "../javascript"
+    },
+    {
+      "path": "../06-Components"
+    }
+  ],
+  "settings": {}
+}
