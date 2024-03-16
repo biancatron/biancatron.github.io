@@ -32,6 +32,11 @@ h4 {
   font-weight: 700;
 }
 
+h5 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
 p {
   font-size: 18px;
   line-height: 1.5;
@@ -182,4 +187,20 @@ header {
   border-radius: 16px;
   box-shadow: 4px 8px 20px 0px rgba(109, 61, 71, 0.25);
   background-color: #fffefe;
+}
+
+/* FOOTER */
+footer {
+  background-color: #242424;
+  text-align: center;
+  padding: 48px 24px;
+}
+
+footer h4 {
+  color: #eaac8b;
+  margin-bottom: 24px;
+}
+
+footer h5 {
+  color: #fffefe;
 }
