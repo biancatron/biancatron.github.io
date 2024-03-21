@@ -1,14 +1,45 @@
-function myFunction() {
-  // Get the text field
-  var copyText = document.getElementById("myInput");
+const btnNavEl = document.querySelector(".btn-mobile-nav");
+const headerEl = document.querySelector(".header");
+btnNavEl.addEventListener("click", function () {
+  headerEl.classList.toggle("nav-open");
+});
 
-  // Select the text field
-  copyText.select();
-  copyText.setSelectionRange(0, 99999); // For mobile devices
+const sectionHeroEl = document.querySelector(".section-hero");
+const observer = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+    if (!ent.isIntersecting) {
+      document.body.classList.add("sticky");
+    }
 
-  // Copy the text inside the text field
-  navigator.clipboard.writeText(copyText.value);
+    if (ent.isIntersecting) {
+      document.body.classList.remove("sticky");
+    }
+  },
+  {
+    root: null,
+    threshold: 0,
+    rootMargin: "-96px",
+  }
+);
+observer.observe(sectionHeroEl);
 
-  // Alert the copied text
-  alert("Email address copied!");
+///////////////////////////////////////////////////////////
+// Fixing flexbox gap property missing in some Safari versions
+function checkFlexGap() {
+  var flex = document.createElement("div");
+  flex.style.display = "flex";
+  flex.style.flexDirection = "column";
+  flex.style.rowGap = "1px";
+
+  flex.appendChild(document.createElement("div"));
+  flex.appendChild(document.createElement("div"));
+
+  document.body.appendChild(flex);
+  var isSupported = flex.scrollHeight === 1;
+  flex.parentNode.removeChild(flex);
+  console.log(isSupported);
+
+  if (!isSupported) document.body.classList.add("no-flexbox-gap");
 }
+checkFlexGap();

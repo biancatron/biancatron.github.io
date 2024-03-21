@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: 2px dotted #355070;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 0.6rem rgba(239, 166, 169, 0.25);
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Noto-Sans", sans-serif;
+  line-height: 1.5;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #242424;
+  background-color: #fffefe;
+  overflow-x: hidden;
+}
+
+/* ******************* */
+/* REUSABLE COMPONENTS */
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 2.4rem;
+}
+
+.grid {
+  display: grid;
+  column-gap: 3.2rem;
+  row-gap: 3.2rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* TYPOGRAPHY */
+.heading-primary {
+  font-size: 5.4rem;
+  font-weight: 800;
+  color: #355070;
+  line-height: 1;
+}
+
+.heading-secondary {
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+
+/* BUTTONS */
+.btn,
+.btn:link,
+.btn:visited {
+  background: linear-gradient(
+    to bottom right,
+    #eaac8b,
+    #e56b6f,
+    #b56576,
+    #355070
+  );
+  color: #fff;
+  text-decoration: none;
+  padding: 1.2rem 2.4rem;
+  display: inline-block;
+  align-self: flex-start;
+  font-weight: 700;
+  border-radius: 50px;
+}
+
+.btn:hover,
+.btn:active {
+  background: #355070;
+}
+
+/* ******************* */
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9.6rem;
+  padding: 0 4.8rem;
+  position: relative;
+  border-bottom: 1px solid #f0e0e4;
+}
+
+.biancaLogo {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.bianca {
+  padding: 0 0.8rem;
+  color: #b56576;
+}
+
+.biancaK {
+  font-size: 2.6rem;
+  font-weight: 700;
+  padding-bottom: 0.4rem;
+}
+
+.uxui {
+  font-weight: 500;
+}
+
+.logo {
+  height: 5.6rem;
+}
+
+/* ******************* */
+/* NAVIGATION */
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  background: linear-gradient(to bottom right, #e56b6f, #b56576, #355070);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  all: unset;
+  color: #355070;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* MOBILE NAV */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.material-symbols-outlined {
+  font-size: 4.5rem;
+  color: #b56576;
+}
+
+.material-symbols-outlined[name="close"] {
+  display: none;
+}
+
+/* ******************* */
+/* FOOTER */
+.footer {
+  padding: 4.8rem 0;
+  background-color: #242424;
+  text-align: center;
+}
+
+.footer .heading-secondary {
+  color: #eaac8b;
+  margin-bottom: 2.4rem;
+}
+
+.email {
+  color: #fffefe;
+  font-size: 2.2rem;
+  font-weight: 500;
+}

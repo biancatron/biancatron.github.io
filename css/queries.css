@@ -1,0 +1,152 @@
+/* BELOW 1344px */
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+}
+
+/* BELOW 1200px */
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .grid {
+    column-gap: 1.6rem;
+    row-gap: 3.2rem;
+  }
+
+  .header {
+    padding: 0 2.4rem;
+  }
+}
+
+/* BELOW 864px (tablets) */
+@media (max-width: 54em) {
+  .heading-primary {
+    font-size: 4.5rem;
+  }
+
+  .section-hero {
+    padding: 3.2rem 0;
+  }
+
+  .hero-subtext {
+    font-size: 2.6rem;
+  }
+
+  .biancaK {
+    font-size: 2.2rem;
+    padding-bottom: 0;
+  }
+
+  .grid--3-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .industry--highlight {
+    grid-column: span 2;
+  }
+
+  /* MOBILE NAV */
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.97);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    transition: all 400ms ease-out;
+    /* hiding nav */
+    opacity: 0;
+    /* inaccesible by mouse/keyboard */
+    pointer-events: none;
+    /* hide from screenreaders */
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .material-symbols-outlined[name="close"] {
+    display: block;
+  }
+
+  .nav-open .material-symbols-outlined[name="menu"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+    align-items: flex-start;
+    margin-left: 4rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+}
+
+/* BELOW 544px (phones!) */
+@media (max-width: 34em) {
+  .container {
+    padding: 0 1.6rem;
+  }
+
+  .grid {
+    row-gap: 1.6rem;
+  }
+
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 1.6rem;
+    gap: 1.6rem;
+  }
+
+  .hero-text-box {
+    gap: 1.2rem;
+  }
+
+  .hero-subtext {
+    margin-top: 0;
+  }
+
+  .hero-img-box:nth-child(2) {
+    grid-row: 1;
+  }
+
+  .industry {
+    padding: 2.4rem 0.8rem;
+  }
+
+  .industry--highlight {
+    background-color: #fffefe;
+    box-shadow: 0 4px 8px rgba(109, 61, 71, 0.25);
+    padding: 2.4rem 1.6rem;
+    grid-column: span 1;
+  }
+}
