@@ -32,14 +32,23 @@
   border-radius: 12px;
 }
 
+.background-title {
+  padding: 4rem 0;
+}
+
 /* ******************* */
-/* career BACKGROUND */
-.section-background {
+/* career card */
+.section-bg {
   background-color: #f0e0e4;
   padding: 4rem 0;
 }
 
-.industry {
+.section-bg-secondary {
+  background-color: #fffefe;
+  padding: 4rem 0;
+}
+
+.card {
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
@@ -48,18 +57,41 @@
   transition: all 400ms;
 }
 
-.industry:hover {
+.card:hover {
   transform: translate(-1rem, -1rem);
   background-color: #fffefe;
   box-shadow: 0 4px 8px rgba(109, 61, 71, 0.25);
 }
 
-.industry--highlight {
+.card--highlight {
   background-color: #fffefe;
   box-shadow: 0 4px 8px rgba(109, 61, 71, 0.25);
 }
 
-.industry-img {
+.card--steady {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  padding: 1.6rem 1rem;
+  border-radius: 8px;
+}
+
+.card-img {
   width: 100%;
   border-radius: 8px;
+}
+
+/* career BACKGROUND SPECIFIC */
+.bg-category {
+  padding: 0 2.4rem;
+}
+
+.bg-description {
+  margin: 0.8rem 0 4rem 0;
+  max-width: 66rem;
+}
+
+.warning {
+  color: #da2f35;
+  margin-bottom: 1.6rem;
 }

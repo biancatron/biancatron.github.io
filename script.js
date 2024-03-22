@@ -4,7 +4,7 @@ btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
 });
 
-const sectionHeroEl = document.querySelector(".section-hero");
+const sectionHeroEl = document.querySelector(".background-title");
 const observer = new IntersectionObserver(
   function (entries) {
     const ent = entries[0];
