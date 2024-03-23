@@ -10,7 +10,7 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.6rem;
+  gap: 3.2rem;
   align-items: center;
 }
 
@@ -32,66 +32,60 @@
   border-radius: 12px;
 }
 
-.background-title {
-  padding: 4rem 0;
-}
-
-/* ******************* */
-/* career card */
-.section-bg {
-  background-color: #f0e0e4;
-  padding: 4rem 0;
-}
-
-.section-bg-secondary {
-  background-color: #fffefe;
-  padding: 4rem 0;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
-  padding: 3.2rem 2.4rem;
-  border-radius: 8px;
-  transition: all 400ms;
-}
-
-.card:hover {
-  transform: translate(-1rem, -1rem);
-  background-color: #fffefe;
-  box-shadow: 0 4px 8px rgba(109, 61, 71, 0.25);
-}
-
-.card--highlight {
-  background-color: #fffefe;
-  box-shadow: 0 4px 8px rgba(109, 61, 71, 0.25);
-}
-
-.card--steady {
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
-  padding: 1.6rem 1rem;
-  border-radius: 8px;
-}
-
-.card-img {
-  width: 100%;
-  border-radius: 8px;
-}
-
 /* career BACKGROUND SPECIFIC */
 .bg-category {
   padding: 0 2.4rem;
 }
 
 .bg-description {
-  margin: 0.8rem 0 4rem 0;
+  /* margin: 0.8rem 0 4rem 0; */
   max-width: 66rem;
 }
 
 .warning {
   color: #da2f35;
   margin-bottom: 1.6rem;
+}
+
+/* skill TAGS */
+.tag--red {
+  background-color: #efa6a9;
+}
+
+.tag--orange {
+  background-color: #eaac8b;
+}
+
+.tag--plum {
+  background-color: #d3a3ad;
+}
+
+.tag--blue {
+  background-color: #d7dce2;
+}
+
+.tldr--heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #b56576;
+}
+
+.quote {
+  color: #b56576;
+  margin-bottom: 0.8rem;
+}
+
+.quote--name {
+  font-size: 1.6rem;
+  color: #4a4a4a;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.list {
+  padding: 1.2rem 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
 }
