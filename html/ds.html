@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="../octo-192.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <link rel="stylesheet" href="../css/general.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/queries.css" />
+
+    <title>UX/UI | Design System</title>
+
+    <script defer src="../script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="biancaLogo">
+        <a href="../index.html">
+          <img
+            src="../octo-gradient.png"
+            alt="octopus with one eye with sunset gradient fill"
+            class="logo"
+          />
+        </a>
+        <div class="bianca">
+          <p class="biancaK">Bianca Kolendo</p>
+          <p class="uxui">UX/UI Designer</p>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li>
+            <a href="../html/uxui.html" class="main-nav-link">UX/UI Design</a>
+          </li>
+          <li><a href="../html/lx.html" class="main-nav-link">LX Design</a></li>
+          <li><a href="../html/flair.html" class="main-nav-link">Flair</a></li>
+          <li><a href="#" class="main-nav-link">Resume</a></li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <span class="material-symbols-outlined" name="menu"> menu </span>
+        <span class="material-symbols-outlined" name="close"> close </span>
+      </button>
+    </header>
+
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">Design System</h1>
+            <div class="skill-tags">
+              <div class="tag tag--orange">Figma</div>
+              <div class="tag tag--plum">Advanced Prototyping</div>
+              <div class="tag tag--blue">Variables</div>
+              <div class="tag tag--red">Atomic Design</div>
+            </div>
+            <p class="hero-description">
+              The Design System (DS) at Lovehoney was pieced together while the
+              UX designers were actively working on projects. This led to
+              disorganization, duplicated component builds, and inconsistency
+              across the board and our projects. Anytime I found myself with
+              some downtime, I chipped away at updating the DS.
+            </p>
+          </div>
+          <div class="img-box">
+            <img
+              src="../imgs/ds/mainImage.PNG"
+              alt="Lovehoney's Design System in Figma"
+              class="hero-img"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-bg-secondary">
+        <div class="container">
+          <h2 class="heading-secondary bottom-xs">Background</h2>
+          <p class="bg-description bottom-md">
+            Lovehoney uses the Atomic Design methodology. This allows for
+            consistency in all components; from atoms, to molecules, to
+            organisms. Properly organizing and building-in flexibility between
+            states and styling allowed one component to be used in numerous
+            ways. With rules and restrictions set, anyone could correctly use
+            these without needing to reference documentation.
+          </p>
+
+          <img
+            src="../imgs/ds/messyOriginal.PNG"
+            alt="Unorganized Figma Design System"
+            class="card-img bottom-lg"
+          />
+
+          <h2 class="heading-secondary bottom-xs">Goal</h2>
+          <p class="bg-description">
+            Improve components and organize the DS for quicker application.
+            <br /><br />
+            To achieve this, I’ll need to make components that are…
+          </p>
+          <ul class="list bottom-md">
+            <li>consistent with an 8pt grid</li>
+            <li>matching brand colors</li>
+            <li>flexible in states and styling</li>
+            <li>accessible</li>
+          </ul>
+
+          <div class="grid grid--2-cols bottom-lg">
+            <div>
+              <h2 class="heading-secondary bottom-xs">Research & Discovery</h2>
+              <p class="bg-description">
+                Before updating the DS, there needed to be a strategy. As a
+                team, we each found 3 examples of DSs that were appealing. We
+                then shared what we found and the appeal. Once we knew what we
+                were looking to achieve, I took on the responsibility of
+                drafting our process to get to a completed DS.
+              </p>
+            </div>
+            <img
+              src="../imgs/ds/outline.PNG"
+              class="card-img"
+              alt="Design System research, comprised of examples from well established DSs"
+            />
+          </div>
+
+          <div class="grid grid--2-cols bottom-md">
+            <img src="../imgs/ds/documentation.PNG" class="card-img" />
+            <div>
+              <h2 class="heading-secondary bottom-xs">Audience</h2>
+              <p class="bg-description">
+                The primary audience was the UX designers, but we would want to
+                make the DS accessible to developers, PMs, Creative, and the
+                Storefront team. Knowing there was a range of skill sets that
+                could benefit from using the DS, I began by writing out
+                introductory documentation. This included defining a DS, Atomic
+                Design, and UX principles.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <h2 class="heading-secondary bottom-xs">Atoms</h2>
+            <p class="bg-description bottom-sm">
+              When building a house, the easiest place to start is at the
+              foundation.
+            </p>
+            <div class="section-bg-sm bottom-sm">
+              <div class="grid grid--2-cols center-content">
+                <div>
+                  <img
+                    src="../imgs/ds/brandColors.jpg"
+                    class="row-img"
+                    alt="Brand colors"
+                  />
+                  <p class="caption">Original brand color display</p>
+                </div>
+                <div>
+                  <img
+                    src="../imgs/ds/brandColors_updated.jpg"
+                    class="row-img"
+                    alt="Brand colors"
+                  />
+                  <p class="caption">Updated brand color display</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3 class="heading-tertiary bottom-xs">Brand Colors</h3>
+          <p class="bg-description bottom-lg">
+            The color cards were doing more than providing the hex code for our
+            brand colors. They also indicated how to stay in contrast compliance
+            when using black or white font. But, I found the Creative or
+            Storefront teams would often pair the primary brand color, a purple,
+            with another brand color and fall out of compliance. So, I
+            redesigned the color cards to include compliance information when
+            pairing with the primary purple.
+          </p>
+
+          <div class="section-bg-sm bottom-sm">
+            <div class="grid grid--2-cols center-content">
+              <div>
+                <img
+                  src="../imgs/ds/Icons 22.png"
+                  class="hero-img"
+                  alt="Original iconography"
+                />
+                <p class="caption">Original icon set</p>
+              </div>
+              <div>
+                <img
+                  src="../imgs/ds/Icons 23.png"
+                  class="hero-img"
+                  alt="Iconography"
+                />
+                <p class="caption">Updated icon set</p>
+              </div>
+            </div>
+          </div>
+          <h3 class="heading-tertiary bottom-xs">Iconography</h3>
+          <p class="bg-description bottom-lg">
+            The original 50 icons were not set up with any guidelines, rules, or
+            consistency- there were 5 different “black” colors in the set! I
+            began rebuilding the Lovehoney iconography by seeing how a complex
+            icon could be rebuilt against a defined grid and keylines.
+            <br /><br />
+            This allowed me to rebuild all 50 icons, with a couple extras. These
+            new icons had consistent brand colors, stroke width, and corner
+            radii.
+          </p>
+
+          <div>
+            <h2 class="heading-secondary bottom-xs">Molecules</h2>
+            <p class="bg-description bottom-sm">
+              Once atoms were cleaned up, I tended to update pieces in the DS as
+              I ran into them in my project designs.
+            </p>
+            <div class="section-bg-sm bottom-sm">
+              <div class="grid grid--2-cols center-content">
+                <div>
+                  <img
+                    src="../imgs/ds/inputField.png"
+                    class="hero-img"
+                    alt="Original Input field component"
+                  />
+                  <p class="caption">Original Input field component</p>
+                </div>
+                <div>
+                  <img
+                    src="../imgs/ds/Input Fields.png"
+                    class="hero-img"
+                    alt="Updated Input field component"
+                  />
+                  <p class="caption">Updated Input field component</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3 class="heading-tertiary bottom-xs">Input Fields</h3>
+          <p class="bg-description bottom-md">
+            The next challenge was recreating the Input field component.
+            Originally, this component was set up with several different states
+            within the same component as hidden layers. Although there were
+            variants, the component was not flexible and, honestly, a bit messy.
+            I was tasked by the team to make this as a single, flexible
+            component that could support different states, a range of nested
+            instances, and varying amounts of fields.
+            <br /><br />
+            ​This rebuild required a lot of planning and trial and error. I knew
+            I’d need to make variants based on the component states (active,
+            inactive, error), but there were a lot of questions I could only
+            figure out by getting into the build and seeing what would happen!
+          </p>
+
+          <h3 class="heading-tertiary bottom-xs">Product tiles</h3>
+          <p class="bg-description bottom-sm">
+            While the holidays approached, I took the opportunity to learn about
+            variables and even developed training for the UX teams when they
+            returned from their break. The product tile was an exciting piece as
+            it allowed me to prepare it for variables in its component
+            construction.
+          </p>
+          <div class="section-bg-sm bottom-sm">
+            <div class="grid grid--2-cols center-content">
+              <div>
+                <img
+                  src="../imgs/ds/productTile3.0.PNG"
+                  class="hero-img"
+                  alt="Original Product tile"
+                />
+                <p class="caption">Original Product tile</p>
+              </div>
+              <div>
+                <img
+                  src="../imgs/ds/productTile3.0_updated.PNG"
+                  class="hero-img"
+                  alt="Updated Product tile"
+                />
+                <p class="caption">Updated Product tile</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid grid--2-cols center-content">
+            <div>
+              <p>
+                <strong>Clean up</strong> <br /><br />
+                Before I could set this component up for variable usage, I
+                needed to:
+              </p>
+              <ul class="list bottom-md">
+                <li>removing duplicated auto-layouts</li>
+                <li>trimming the width by 1 pixel fit to fit the 8pt grid</li>
+                <li>updating the image size to fit a clean 3:4 ratio</li>
+                <li>sorting the component properties</li>
+              </ul>
+            </div>
+            <div>
+              <p>
+                <strong>Variable Prep</strong> <br /><br />
+                Once that was done, I could prepare it for prototyping by:
+              </p>
+              <ul class="list bottom-md">
+                <li>separating the price from the currency symbol</li>
+                <li>
+                  setting the product name to truncate once it hit 3 lines in
+                  height
+                </li>
+              </ul>
+            </div>
+          </div>
+          <p class="bg-description bottom-sm">
+            <strong>Prototyping with variables</strong> <br /><br />Curious
+            about how to prototype with variables? See my training and learn how
+            this component helped simplify an add-on interaction from 54 frames
+            to 1!
+          </p>
+
+          <div class="img-box">
+            <img
+              src="../imgs/ds/variables.png"
+              class="row-img bottom-sm"
+              alt="First slide of a Variables training slide deck"
+            />
+            <div class="center-self">
+              <a href="#" target="_blank" class="btn bottom-lg content"
+                >Learn more about variables</a
+              >
+            </div>
+          </div>
+
+          <h2 class="heading-secondary bottom-xs">Reflection</h2>
+          <p class="bg-description">
+            The biggest and most consistent obstacle I ran into when updating
+            the DS was that many components were not built with Atomic Design in
+            mind. This led me to go back and forth between components to ensure
+            larger components were being built with the flexibility of a well
+            made smaller component.
+            <br /><br />
+            This was a great project to help communication and build a stronger
+            relationship with the team. Being able to teach variables helped me
+            learn the concept better. Cleaning up components and teaching the
+            team better ways to construct them helped us all make more
+            consistent designs in less time. As any DS, it still has a ways to
+            go and may find itself evolving into something new entirely.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="section-bg footer-nav">
+      <div class="grid grid--3-cols">
+        <div>
+        <a href="../html/bestSellers.html">&larr; Previous: Best Sellers</a>
+      </div>
+      <div>
+      </div>
+      <div>
+        <a href="#">Back to the top &uarr;</a>
+      </div>
+    </footer>
+  </body>
+</html>
