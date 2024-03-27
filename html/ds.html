@@ -141,8 +141,8 @@
             <div>
               <h2 class="heading-secondary bottom-xs">Audience</h2>
               <p class="bg-description">
-                The primary audience was the UX designers, but we would want to
-                make the DS accessible to developers, PMs, Creative, and the
+                The primary audience was the UX designers, but we needed to make
+                the DS accessible to developers, PMs, Creative, and the
                 Storefront team. Knowing there was a range of skill sets that
                 could benefit from using the DS, I began by writing out
                 introductory documentation. This included defining a DS, Atomic
@@ -178,19 +178,21 @@
               </div>
             </div>
           </div>
-          <h3 class="heading-tertiary bottom-xs">Brand Colors</h3>
-          <p class="bg-description bottom-lg">
-            The color cards were doing more than providing the hex code for our
-            brand colors. They also indicated how to stay in contrast compliance
-            when using black or white font. But, I found the Creative or
-            Storefront teams would often pair the primary brand color, a purple,
-            with another brand color and fall out of compliance. So, I
-            redesigned the color cards to include compliance information when
-            pairing with the primary purple.
-          </p>
+          <div class="container bottom-lg">
+            <h3 class="heading-tertiary bottom-xs">Brand Colors</h3>
+            <p class="bg-description">
+              The color cards were doing more than providing the hex code for
+              our brand colors. They also indicated how to stay in contrast
+              compliance when using black or white font. But, I found the
+              Creative or Storefront teams would often pair the primary brand
+              color, a purple, with another brand color and fall out of
+              compliance. So, I redesigned the color cards to include compliance
+              information when pairing with the primary purple.
+            </p>
+          </div>
 
           <div class="section-bg-sm bottom-sm">
-            <div class="grid grid--2-cols center-content">
+            <div class="grid grid--2-cols">
               <div>
                 <img
                   src="../imgs/ds/Icons 22.png"
@@ -209,17 +211,19 @@
               </div>
             </div>
           </div>
-          <h3 class="heading-tertiary bottom-xs">Iconography</h3>
-          <p class="bg-description bottom-lg">
-            The original 50 icons were not set up with any guidelines, rules, or
-            consistency- there were 5 different “black” colors in the set! I
-            began rebuilding the Lovehoney iconography by seeing how a complex
-            icon could be rebuilt against a defined grid and keylines.
-            <br /><br />
-            This allowed me to rebuild all 50 icons, with a couple extras. These
-            new icons had consistent brand colors, stroke width, and corner
-            radii.
-          </p>
+          <div class="container bottom-lg">
+            <h3 class="heading-tertiary bottom-xs">Iconography</h3>
+            <p class="bg-description bottom-lg">
+              The original 50 icons were not set up with any guidelines, rules,
+              or consistency- there were 5 different “black” colors in the set!
+              I began rebuilding the Lovehoney iconography by seeing how a
+              complex icon could be rebuilt against a defined grid and keylines.
+              <br /><br />
+              This allowed me to rebuild all 50 icons, with a couple extras.
+              These new icons had consistent brand colors, stroke width, and
+              corner radii.
+            </p>
+          </div>
 
           <div>
             <h2 class="heading-secondary bottom-xs">Molecules</h2>
@@ -228,7 +232,7 @@
               I ran into them in my project designs.
             </p>
             <div class="section-bg-sm bottom-sm">
-              <div class="grid grid--2-cols center-content">
+              <div class="grid grid--2-cols">
                 <div>
                   <img
                     src="../imgs/ds/inputField.png"
@@ -248,30 +252,34 @@
               </div>
             </div>
           </div>
-          <h3 class="heading-tertiary bottom-xs">Input Fields</h3>
-          <p class="bg-description bottom-md">
-            The next challenge was recreating the Input field component.
-            Originally, this component was set up with several different states
-            within the same component as hidden layers. Although there were
-            variants, the component was not flexible and, honestly, a bit messy.
-            I was tasked by the team to make this as a single, flexible
-            component that could support different states, a range of nested
-            instances, and varying amounts of fields.
-            <br /><br />
-            ​This rebuild required a lot of planning and trial and error. I knew
-            I’d need to make variants based on the component states (active,
-            inactive, error), but there were a lot of questions I could only
-            figure out by getting into the build and seeing what would happen!
-          </p>
 
-          <h3 class="heading-tertiary bottom-xs">Product tiles</h3>
-          <p class="bg-description bottom-sm">
-            While the holidays approached, I took the opportunity to learn about
-            variables and even developed training for the UX teams when they
-            returned from their break. The product tile was an exciting piece as
-            it allowed me to prepare it for variables in its component
-            construction.
-          </p>
+          <div class="container">
+            <h3 class="heading-tertiary bottom-xs">Input Fields</h3>
+            <p class="bg-description bottom-md">
+              The next challenge was recreating the Input field component.
+              Originally, this component was set up with several different
+              states within the same component as hidden layers. Although there
+              were variants, the component was not flexible and, honestly, a bit
+              messy. I was tasked by the team to make this as a single, flexible
+              component that could support different states, a range of nested
+              instances, and varying amounts of fields.
+              <br /><br />
+              ​This rebuild required a lot of planning and trial and error. I
+              knew I’d need to make variants based on the component states
+              (active, inactive, error), but there were a lot of questions I
+              could only figure out by getting into the build and seeing what
+              would happen!
+            </p>
+
+            <h3 class="heading-tertiary bottom-xs">Product tiles</h3>
+            <p class="bg-description bottom-sm">
+              While the holidays approached, I took the opportunity to learn
+              about variables and even developed training for the UX teams when
+              they returned from their break. The product tile was an exciting
+              piece as it allowed me to prepare it for variables in its
+              component construction.
+            </p>
+          </div>
           <div class="section-bg-sm bottom-sm">
             <div class="grid grid--2-cols center-content">
               <div>
@@ -292,49 +300,53 @@
               </div>
             </div>
           </div>
-          <div class="grid grid--2-cols center-content">
-            <div>
-              <p>
-                <strong>Clean up</strong> <br /><br />
-                Before I could set this component up for variable usage, I
-                needed to:
-              </p>
-              <ul class="list bottom-md">
-                <li>removing duplicated auto-layouts</li>
-                <li>trimming the width by 1 pixel fit to fit the 8pt grid</li>
-                <li>updating the image size to fit a clean 3:4 ratio</li>
-                <li>sorting the component properties</li>
-              </ul>
+
+          <div class="container">
+            <div class="grid grid--2-cols">
+              <div>
+                <p>
+                  <strong>Clean up</strong> <br />
+                  Before I could set this component up as a variable, I needed
+                  to:
+                </p>
+                <ul class="list bottom-md">
+                  <li>removing duplicated auto-layouts</li>
+                  <li>trimming the width by 1 pixel fit to fit the 8pt grid</li>
+                  <li>updating the image size to fit a clean 3:4 ratio</li>
+                  <li>sorting the component properties</li>
+                </ul>
+              </div>
+              <div>
+                <p>
+                  <strong>Variable Prep</strong> <br />
+                  Once that was done, I could prepare it for prototyping by:
+                </p>
+                <ul class="list bottom-md">
+                  <li>separating the price from the currency symbol</li>
+                  <li>setting the product name to truncate at 3 lines</li>
+                </ul>
+              </div>
             </div>
-            <div>
-              <p>
-                <strong>Variable Prep</strong> <br /><br />
-                Once that was done, I could prepare it for prototyping by:
-              </p>
-              <ul class="list bottom-md">
-                <li>separating the price from the currency symbol</li>
-                <li>
-                  setting the product name to truncate once it hit 3 lines in
-                  height
-                </li>
-              </ul>
-            </div>
+
+            <p class="bg-description bottom-sm">
+              <strong>Prototyping with variables</strong> <br />Curious about
+              how to prototype with variables? See my training and learn how
+              this component helped simplify an add-on interaction from 54
+              frames to 1!
+            </p>
           </div>
-          <p class="bg-description bottom-sm">
-            <strong>Prototyping with variables</strong> <br /><br />Curious
-            about how to prototype with variables? See my training and learn how
-            this component helped simplify an add-on interaction from 54 frames
-            to 1!
-          </p>
 
           <div class="img-box">
             <img
               src="../imgs/ds/variables.png"
-              class="row-img bottom-sm"
+              class="img-vh bottom-sm"
               alt="First slide of a Variables training slide deck"
             />
             <div class="center-self">
-              <a href="#" target="_blank" class="btn bottom-lg content"
+              <a
+                href="https://www.figma.com/file/tdjSvvmteouFJzPx1Ku6Sy/Advanced-Prototyping---Session-Template-(Portfolio)?type=design&node-id=0%3A1&mode=design&t=h7skX3WyPZ8T6hu5-1"
+                target="_blank"
+                class="btn bottom-lg content"
                 >Learn more about variables</a
               >
             </div>
@@ -343,10 +355,10 @@
           <h2 class="heading-secondary bottom-xs">Reflection</h2>
           <p class="bg-description">
             The biggest and most consistent obstacle I ran into when updating
-            the DS was that many components were not built with Atomic Design in
-            mind. This led me to go back and forth between components to ensure
-            larger components were being built with the flexibility of a well
-            made smaller component.
+            the DS was that many components were not originally built with
+            Atomic Design in mind. This led me to go back and forth between
+            components to ensure larger components were being built with the
+            flexibility of a well made smaller component.
             <br /><br />
             This was a great project to help communication and build a stronger
             relationship with the team. Being able to teach variables helped me
@@ -360,15 +372,8 @@
     </main>
 
     <footer class="section-bg footer-nav">
-      <div class="grid grid--3-cols">
-        <div>
-        <a href="../html/bestSellers.html">&larr; Previous: Best Sellers</a>
-      </div>
-      <div>
-      </div>
-      <div>
-        <a href="#">Back to the top &uarr;</a>
-      </div>
+      <a href="../html/bestSellers.html">&larr; Previous: Confirmation Page</a>
+      <a href="#">Back to the top &uarr;</a>
     </footer>
   </body>
 </html>

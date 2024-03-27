@@ -124,6 +124,10 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .grid--3-cols--sticky {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   .hero {
     grid-template-columns: 1fr;
     padding: 0 1.6rem;
@@ -151,5 +155,11 @@
     box-shadow: 0 4px 8px rgba(109, 61, 71, 0.25);
     padding: 2.4rem 1.6rem;
     grid-column: span 1;
+  }
+
+  .footer-nav {
+    flex-direction: column;
+    gap: 1.6rem;
+    padding: 3.2rem 3.2rem;
   }
 }
