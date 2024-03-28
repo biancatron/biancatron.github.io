@@ -38,26 +38,59 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-const sectionHeroEl = document.querySelector(".background-title");
-const observer = new IntersectionObserver(
-  function (entries) {
-    const ent = entries[0];
-    if (!ent.isIntersecting) {
-      document.body.classList.add("sticky");
-    }
+// const sectionHeroEl = document.querySelector(".background-title");
+// const observer = new IntersectionObserver(
+//   function (entries) {
+//     const ent = entries[0];
+//     if (!ent.isIntersecting) {
+//       document.body.classList.add("sticky");
+//     }
 
-    if (ent.isIntersecting) {
-      document.body.classList.remove("sticky");
-    }
-  },
-  {
-    root: null,
-    threshold: 0,
-    rootMargin: "-96px",
+//     if (ent.isIntersecting) {
+//       document.body.classList.remove("sticky");
+//     }
+//   },
+//   {
+//     root: null,
+//     threshold: 0,
+//     rootMargin: "-96px",
+//   }
+// );
+// observer.observe(sectionHeroEl);
+
+// IMAGE CAROUSEL
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides((slideIndex += n));
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides((slideIndex = n));
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {
+    slideIndex = 1;
   }
-);
-observer.observe(sectionHeroEl);
-
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+}
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {
