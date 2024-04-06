@@ -420,6 +420,12 @@ a:active {
   padding: 4.8rem 4.8rem;
 }
 
+.coded-footer {
+  font-size: 1.2rem;
+  color: #bb8a6f;
+  padding-top: 2.4rem;
+}
+
 /* LINKS */
 .footer-nav a:link,
 .footer-nav a:visited {
