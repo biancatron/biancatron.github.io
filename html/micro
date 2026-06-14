@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-T4MMDPP9VK"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-T4MMDPP9VK");
+    </script>
+
+    <link rel="icon" href="../octo-192.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <link rel="stylesheet" href="../css/general.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/queries.css" />
+
+    <title>LX | Micro-eLearnings</title>
+
+    <script defer src="../script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="../index.html">
+        <div class="biancaLogo">
+          <img
+            src="../octo-gradient.png"
+            alt="octopus with one eye with sunset gradient fill"
+            class="logo"
+          />
+          <div class="bianca">
+            <p class="biancaK">Bianca Kolendo</p>
+            <p class="uxui">Experience Designer</p>
+          </div>
+        </div>
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a href="../html/lx.html" class="main-nav-link">LX Design</a></li>
+          <li><a href="../html/uxui.html" class="main-nav-link">UX/UI Design</a></li>
+          <li><a href="../html/flair.html" class="main-nav-link">Flair</a></li>
+          <li>
+            <a
+              href="../Kolendo Resume.pdf"
+              target="_blank"
+              class="main-nav-link"
+              >Resume</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <span class="material-symbols-outlined" name="menu"> menu </span>
+        <span class="material-symbols-outlined" name="close"> close </span>
+      </button>
+    </header>
+
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">Introducing a New Learning Modality</h1>
+            <p class="heading-tertiary">Netspend | Customer Success | Q1-Q2 2026</p>
+            <div class="skill-tags">
+              <div class="tag tag--blue">AI-Supported Design</div>
+              <div class="tag tag--orange">UX Design</div>
+              <div class="tag tag--red">Content Development</div>
+              <div class="tag tag--plum">Vendor Collaboration</div>
+            </div>
+            <p class="hero-description">
+              I introduced micro-eLearning as a new training modality for vendor-supported product launches and updates. Previously, all launch training was delivered through instructor-led sessions, regardless of content complexity. By shifting short-form updates to targeted eLearning experiences, I <b>reduced billable training time by 71%, accelerated development timelines, and created a more consistent learning experience</b> for agents across locations.
+            </p>
+          </div>
+          <div class="hero-img-box center-self">
+            <img
+              src="../imgs/micro/IMG_NAME.jpg"
+              alt="Tarot reading done with Netspend pre-paid cards."
+              class="img-vh"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container bottom-lg">
+          <div class="grid grid--2-cols center-content">
+            <div>
+              <h2 class="heading-secondary bottom-xs">Problem</h2>
+              <p class="bg-description">
+                The standard approach for product launches and process updates relied exclusively on instructor-led training.<br>
+                This created several challenges:<br><br>
+              </p>
+              <div class="container">
+                <ul>
+                  <li>Vendor partners were required to <b>coordinate multiple classes</b> over a two-week period to reach hundreds of agents.</li>
+                  <li>Training sessions <b>averaged 45 minutes</b> when accounting for class setup, attendance, delivery, and return-to-work time.</li>
+                  <li>Many updates contained <b>less than 10 minutes of essential content.</b></li>
+                  <li>Virtual sessions were often <b>combined across sites</b> despite content not being designed for a virtual audience.</li>
+                </ul>
+              </div>
+			  <p class="bg-description">
+                A more scalable solution was needed to deliver time-sensitive updates while maintaining engagement and knowledge retention.
+              </p>
+            </div>
+          <div>
+            <img
+              src="../imgs/micro/IMG_NAME.png"
+              alt="Facilitator leading a training class."
+              class="card-img"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container grid center-content bottom-sm">
+          <div>
+            <h2 class="heading-secondary bottom-xs">Research & Analysis</h2>
+            <div class="bottom-xs">
+              <p class="bg-description">
+                To understand how learners interacted with self-paced content, I piloted an interactive article within the LMS.<br>
+The initial solution included:<br><br>
+
+              </p>
+            </div>
+            <div class="container bottom-md">
+                <p class="bg-description">
+                  <ul>
+                    <li><b>Interactive elements</b> such as tabs and flip cards.</li>
+                    <li><b>Narrated audio</b> to support engagement and accessibility.</li>
+                    <li>Supervisor <b>one-page guides</b> to reinforce learning after launch.</li>
+                    <li>Content followed the tool’s UI structure rather than a logical, customer-centered flow.</li>
+                 </ul>
+               </p>
+            </div>
+			<div class="bottom-xs">
+              <p class="bg-description">
+                Analysis of learner data revealed a key challenge:<br>
+              </p>
+			  </div>
+            <div class="container bottom-md">
+                <p class="bg-description">
+                  <ul>
+                    <li>The narrated content was approximately three minutes long.</li>
+                    <li>78% of learners completed both the training and assessment in less time than the audio duration, indicating that <b>many learners were skimming content rather than engaging with it.</b></li>
+                 </ul>
+               </p>
+            </div>
+			<div class="bottom-lg">
+              <p class="bg-description">
+                I partnered with vendor stakeholders to better <b>understand learner preferences.</b> Feedback consistently pointed toward <b>short-form video content</b> that was fast, visually engaging, and immediately applicable on the job.
+              </p>
+			  </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container grid grid--2-cols bottom-lg">
+          <div>
+            <img
+              src="../imgs/micro/IMG_NAME.png"
+              alt="Image description."
+              class="card-img"
+              />
+          </div>
+          <div>
+            <h2 class="heading-secondary bottom-xs">Design Process</h2>
+            <p class="bg-description">
+              My goal was to create concise, accessible learning experiences that reduced training time while improving learner engagement.<br><br>
+              To accomplish this, I:
+            </p>
+            <div class="container">
+              <ul>
+                <li>Shifted from text-heavy interactions to <b>video-based micro-learning.</b></li>
+                <li>Designed content to be <b>completed independently in minutes</b> rather than requiring scheduled classroom sessions.</li>
+                <li>Created supporting <b>supervisor resources</b> to reinforce key messages after launch and provide just-in-time coaching.</li>
+				<li><b>Incorporated visual demonstrations</b> that connected product updates directly to real customer interactions.</li>
+              </ul>
+            </div>
+			<div class="bottom-xs">
+              <p class="bg-description">
+                While developing the learning strategy, I analyzed documentary-style storytelling techniques and observed that visuals typically changed every few seconds to maintain attention. I applied this principle to micro-learning design by pairing <b>concise narration with frequent visual transitions and contextual animations.</b>
+              </p>
+            </div>
+          </div>
+      </section>
+
+      <section>
+        <div class="container grid grid--2-cols bottom-lg">
+          <div>
+            <h2 class="heading-secondary bottom-xs">Development</h2>
+            <p class="bg-description bottom-sm">
+              Using Adobe Captivate and Gemini’s Omni, I developed short-form micro-eLearnings that combined storytelling, motion graphics, and interactive practice.<br><br>
+Key improvements included:
+            </p>
+			<div class="container">
+              <ul>
+                <li>Created themed, <b>scenario-driven learning experiences</b> that increased learner interest and attention.</li>
+                <li>Used <b>contextual video clips</b> and animations to reinforce key concepts and product changes.
+</li>
+                <li>Added <b>visual cues</b> that highlighted where agents would find information within their tools during live customer interactions.</li>
+				<li><b>Embedded knowledge checks</b> immediately after key learning moments to reinforce retention.
+</li>
+<li>Required learners to reference job aids and internal resources during activities, encouraging <b>behaviors used on the job.</b>
+</li>
+              </ul>
+            
+          </div>
+		  <p class="bg-description bottom-sm">
+              The accompanying supervisor one-sheet remained a critical support tool, particularly when launch dates shifted after training completion and agents needed refresher guidance before go-live.
+            </p>
+          <div>
+            <img
+              src="../imgs/micro/IMG_NAME.png"
+              alt="Image description."
+              class="card-img"
+              />
+          </div>
+        </div>
+      </section>
+
+<section>
+        <div class="container bottom-lg">
+          <h2 class="heading-secondary bottom-xs">Results</h2>
+          <p class="bg-description bottom-sm">
+            The new micro-eLearning approach successfully established an additional learning modality for Customer Success training.<br><br>
+Outcomes included:
+            <div class="container">
+              <ul>
+                <li><b>Reduced billable training time by 71%.</b></li>
+                <li><b>77% of learners</b> completed training in <b>under 15 minutes.</b></li>
+<li>Created a <b>consistent learning experience</b> regardless of learner location.</li>
+              </ul>
+            </div>
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div class="container bottom-lg">
+          <h2 class="heading-secondary bottom-xs">Next Steps</h2>
+          <p class="bg-description bottom-sm">
+            <div class="container">
+              <ul>
+                <li>Expand the video-based micro-learning model to additional product and process updates.</li>
+                <li>Compare knowledge retention and performance metrics between micro-eLearning and traditional ILT delivery.</li>
+				<li>Continue leveraging AI-supported development workflows to accelerate production while maintaining instructional quality.</li>
+              </ul>
+            </div>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="section-bg footer-nav">
+      <a href="../html/leadership.html"
+        >Next: Leadership Support &rarr;</a
+      >
+      <a href="#">Back to the top &uarr;</a>
+    </footer>
+  </body>
+</html>
