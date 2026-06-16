@@ -32,6 +32,11 @@
   border-radius: 8px;
 }
 
+.hero-vid {
+  width: 100%;
+  height: auto;
+}
+
 /* career BACKGROUND SPECIFIC */
 .bg-category {
   padding: 0 2.4rem;
